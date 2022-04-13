@@ -7,13 +7,13 @@ using System.Text;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DevExpress.XtraEditors;
+using DevExpress.XtraBars;
 
 namespace GUI_DevExpress
 {
-    public partial class XtraFrmMain : DevExpress.XtraEditors.XtraForm
+    public partial class FrmMain : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        public XtraFrmMain()
+        public FrmMain()
         {
             InitializeComponent();
         }
