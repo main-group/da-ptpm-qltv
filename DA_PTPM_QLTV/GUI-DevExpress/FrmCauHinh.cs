@@ -23,6 +23,7 @@ namespace GUI_DevExpress
         }
 
         string config = "";
+        int flag = 0;
 
         public FrmCauHinh(string config)
         {
@@ -31,6 +32,7 @@ namespace GUI_DevExpress
             if (config.Equals("modify"))
             {
                 btnThoat.Text = "Trang chủ";
+                btnThoat.Enabled = false;
             }
         }
 
@@ -41,6 +43,10 @@ namespace GUI_DevExpress
             {
                 conn.Open();
                 MessageBox.Show("Kết nối thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (config.Equals("modify") && flag != 0)
+                {
+                    btnThoat.Enabled = true;
+                }
             }
             catch (Exception)
             {
@@ -86,6 +92,7 @@ namespace GUI_DevExpress
             {
                 conn.SaveFile();
                 MessageBox.Show("Lưu thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                flag++;
             }
             catch (Exception)
             {
