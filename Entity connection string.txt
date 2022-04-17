@@ -1,0 +1,3 @@
+metadata=res://*/DA_PTPM_QLTV.csdl|res://*/DA_PTPM_QLTV.ssdl|res://*/DA_PTPM_QLTV.msl;provider=System.Data.SqlClient;provider connection string="data source=DANGTRI-LAPTOP\SQLEXPRESS;initial catalog=DB_PTPM_QLTV;user id=sa;password=***********;MultipleActiveResultSets=True;App=EntityFramework"
+
+metadata=res://*/DA_PTPM_QLTV.csdl|res://*/DA_PTPM_QLTV.ssdl|res://*/DA_PTPM_QLTV.msl;provider=System.Data.SqlClient;provider connection string="data source=DANGTRI-LAPTOP\SQLEXPRESS;initial catalog=DB_PTPM_QLTV;user id=sa;MultipleActiveResultSets=True;App=EntityFramework"

@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using DevExpress.UserSkins;
 using DevExpress.Skins;
 using DevExpress.LookAndFeel;
+using System.IO;
 
 namespace GUI_DevExpress
 {
@@ -19,10 +20,21 @@ namespace GUI_DevExpress
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+            var frm = (dynamic)null;
+
+            if (!File.Exists("connect-db.dba"))
+            {
+                frm = new FrmCauHinh("modify");
+            }
+            else
+            {
+                frm = new FrmTrangChu();
+            }
+
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
             UserLookAndFeel.Default.SetSkinStyle("DevExpress Style");
-            Application.Run(new FrmMain());
+            Application.Run(frm);
         }
     }
 }

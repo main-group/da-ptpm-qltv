@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0df575743b6b4a0c961b7481b6dd1010" Name="Diagram1">
+        <EntityTypeShape EntityType="DB_PTPM_QLTVModel.DatSach" Width="1.5" PointX="5.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PTPM_QLTVModel.DocGia" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PTPM_QLTVModel.MuonSach" Width="1.5" PointX="8.25" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PTPM_QLTVModel.PhatTreHan" Width="1.5" PointX="10.5" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PTPM_QLTVModel.Sach" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PTPM_QLTVModel.sysdiagram" Width="1.5" PointX="7.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PTPM_QLTVModel.TacGia" Width="1.5" PointX="5.25" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PTPM_QLTVModel.ThanhToanPhat" Width="1.5" PointX="5.25" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_PTPM_QLTVModel.TheLoai" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <AssociationConnector Association="DB_PTPM_QLTVModel.FK_DatSach_DocGia" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PTPM_QLTVModel.FK_DatSach_Sach" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PTPM_QLTVModel.FK_MuonSach_DocGia" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PTPM_QLTVModel.FK_PhatTreHan_DocGia" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PTPM_QLTVModel.FK_ThanhToanPhat_DocGia" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PTPM_QLTVModel.FK_MuonSach_Sach" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PTPM_QLTVModel.FK_PhatTreHan_MuonSach" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PTPM_QLTVModel.FK_Sach_TheLoai" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_PTPM_QLTVModel.SachTacGia" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

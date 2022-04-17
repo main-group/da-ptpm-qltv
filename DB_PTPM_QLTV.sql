@@ -112,3 +112,16 @@ constraint FK_PhatTreHan_MuonSach foreign key (MaMuonSach) references MuonSach(M
 alter table ThanhToanPhat add
 constraint FK_ThanhToanPhat_DocGia foreign key (MaDocGia) references DocGia(MaDocGia)
 
+insert into TheLoai values
+(N'Chính trị - pháp luật'),
+(N'Khoa học công nghệ – Kinh tế'),
+(N'Văn học nghệ thuật'),
+(N'Văn hóa xã hội – Lịch sử'),
+(N'Giáo trình'),
+(N'Truyện'),
+(N'Tiểu thuyết'),
+(N'Tâm lý'),
+(N'Tôn giáo'),
+(N'Thiếu nhi')
+
+select * from TheLoai
