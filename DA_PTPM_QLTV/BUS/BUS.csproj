@@ -55,6 +55,10 @@
       <Project>{528ec01d-6162-4bee-a2ab-a9b76ef13166}</Project>
       <Name>DAL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{99fce40e-40bd-4bc3-bc07-4d0e938bfdb1}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

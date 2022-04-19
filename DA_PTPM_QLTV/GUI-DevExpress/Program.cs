@@ -25,7 +25,18 @@ namespace GUI_DevExpress
 
             if (!File.Exists("connect-db.dba") || !Entities.TestConnectionEF())
             {
-                frm = new FrmCauHinh("modify");
+                string loai = "Không tìm thấy file cấu hình kết nối cơ sở dữ liệu!";
+                if (File.Exists("connect-db.dba"))
+                {
+                    loai = "File cấu hình kết nối cơ sở dữ liệu bị lỗi!";
+                }
+                
+                DialogResult result = MessageBox.Show(loai + "\nTiến hành cấu hình lại?", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                
+                if (result == DialogResult.OK)
+                {
+                    frm = new FrmCauHinh("modify");
+                }
             }
             else
             {

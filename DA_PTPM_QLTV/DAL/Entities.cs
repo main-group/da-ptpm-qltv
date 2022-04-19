@@ -53,17 +53,15 @@ namespace DAL
 
         public static bool TestConnectionEF()
         {
-            using (Entities db = Entities.CreateEntities())
+            try
             {
-                try
-                {
-                    return db.Database.Connection.Database.Equals("DB_PTPM_QLTV") ? true : false;
-                }
-                catch (Exception)
-                {
-                    return false;
-                    // throw;
-                }
+                Entities db = Entities.CreateEntities();
+                return db.Database.Connection.Database.Equals("DB_PTPM_QLTV") ? true : false;
+            }
+            catch (Exception)
+            {
+                return false;
+                // throw;
             }
         }
     }

@@ -24,7 +24,7 @@ namespace GUI_DevExpress
         private void FrmMain_Load(object sender, EventArgs e)
         {
             TheLoaiBus theLoaiBus = new TheLoaiBus();
-            grcDSTheLoai.DataSource = theLoaiBus.GetAll();
+            grcDSTheLoai.DataSource = theLoaiBus.GetAllDTO();
         }
 
         private void FrmTrangChu_FormClosing(object sender, FormClosingEventArgs e)
