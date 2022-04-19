@@ -6,6 +6,7 @@ using DevExpress.UserSkins;
 using DevExpress.Skins;
 using DevExpress.LookAndFeel;
 using System.IO;
+using DAL;
 
 namespace GUI_DevExpress
 {
@@ -22,7 +23,7 @@ namespace GUI_DevExpress
 
             var frm = (dynamic)null;
 
-            if (!File.Exists("connect-db.dba"))
+            if (!File.Exists("connect-db.dba") || !Entities.TestConnectionEF())
             {
                 frm = new FrmCauHinh("modify");
             }
