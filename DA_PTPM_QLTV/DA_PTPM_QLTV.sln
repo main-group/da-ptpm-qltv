@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "GUI\GUI.csproj", "{5
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI-DevExpress", "GUI-DevExpress\GUI-DevExpress.csproj", "{0B5C2688-7EEF-4548-A43F-946BAB1E7F41}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{99FCE40E-40BD-4BC3-BC07-4D0E938BFDB1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{0B5C2688-7EEF-4548-A43F-946BAB1E7F41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B5C2688-7EEF-4548-A43F-946BAB1E7F41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B5C2688-7EEF-4548-A43F-946BAB1E7F41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99FCE40E-40BD-4BC3-BC07-4D0E938BFDB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99FCE40E-40BD-4BC3-BC07-4D0E938BFDB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99FCE40E-40BD-4BC3-BC07-4D0E938BFDB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99FCE40E-40BD-4BC3-BC07-4D0E938BFDB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
