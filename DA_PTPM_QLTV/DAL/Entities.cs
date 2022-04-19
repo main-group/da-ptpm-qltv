@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.Common;
 using System.Data.Entity.Core.EntityClient;
 using System.Data.SqlClient;
@@ -48,6 +49,22 @@ namespace DAL
 
             fs.Close();
             return new Entities(connection);
+        }
+
+        public static bool TestConnectionEF()
+        {
+            using (Entities db = Entities.CreateEntities())
+            {
+                try
+                {
+                    return db.Database.Connection.Database.Equals("DB_PTPM_QLTV") ? true : false;
+                }
+                catch (Exception)
+                {
+                    return false;
+                    // throw;
+                }
+            }
         }
     }
 }

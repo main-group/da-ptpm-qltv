@@ -9,6 +9,7 @@ namespace DAL
 {
     public class Encryptor
     {
+        /// Lưu ý key của Encrypt và Decrypt phải giống nhau
         public static string Encrypt(string toEncrypt, string key, bool useHashing)
         {
             byte[] keyArray;

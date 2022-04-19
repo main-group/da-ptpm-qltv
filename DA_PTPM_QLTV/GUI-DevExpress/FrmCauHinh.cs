@@ -23,7 +23,7 @@ namespace GUI_DevExpress
         }
 
         string config = "";
-        int flag = 0;
+        bool flag;
 
         public FrmCauHinh(string config)
         {
@@ -43,10 +43,7 @@ namespace GUI_DevExpress
             {
                 conn.Open();
                 MessageBox.Show("Kết nối thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                if (config.Equals("modify") && flag != 0)
-                {
-                    btnThoat.Enabled = true;
-                }
+
             }
             catch (Exception)
             {
@@ -92,7 +89,6 @@ namespace GUI_DevExpress
             {
                 conn.SaveFile();
                 MessageBox.Show("Lưu thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                flag++;
             }
             catch (Exception)
             {
@@ -100,6 +96,19 @@ namespace GUI_DevExpress
                 // throw;
             }
 
+            if (!Entities.TestConnectionEF())
+            {
+                MessageBox.Show("Vui lòng kết nối đúng cơ sở dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                cmbDatabase.Focus();
+                return;
+            }
+
+            flag = true;
+
+            if (config.Equals("modify") && flag)
+            {
+                btnThoat.Enabled = true;
+            }
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
