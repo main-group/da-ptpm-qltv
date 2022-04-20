@@ -90,6 +90,17 @@ create table ThanhToanPhat
 	constraint PK_ThanhToanPhat primary key (SoTienThanhToan)
 )
 
+create table TaiKhoan
+(
+	MaTaiKhoan int identity(1, 1),
+	TenDangNhap nvarchar(50),
+	MatKhau nvarchar(50),
+	HoTen nvarchar(50),
+	LoaiTaiKhoan bit,
+	TrangThai bit,
+	constraint PK_TaiKhoan primary key (MaTaiKhoan)
+)
+
 alter table Sach add
 constraint FK_Sach_TheLoai foreign key (MaTheLoai) references TheLoai(MaTheLoai)
 
