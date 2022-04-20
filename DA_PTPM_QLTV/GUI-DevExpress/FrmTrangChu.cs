@@ -7,24 +7,23 @@ using System.Text;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DevExpress.XtraBars;
+using DevExpress.XtraEditors;
 using BUS;
-using System.IO;
 
 namespace GUI_DevExpress
 {
-    public partial class FrmTrangChu : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class FrmTrangChu : DevExpress.XtraEditors.XtraForm
     {
         public FrmTrangChu()
         {
-
             InitializeComponent();
         }
 
-        private void FrmMain_Load(object sender, EventArgs e)
+        TheLoaiBus theLoaiBus = new TheLoaiBus();
+
+        private void FrmTrangChu_Load(object sender, EventArgs e)
         {
-            TheLoaiBus theLoaiBus = new TheLoaiBus();
-            grcDSTheLoai.DataSource = theLoaiBus.GetAllDTO();
+
         }
 
         private void FrmTrangChu_FormClosing(object sender, FormClosingEventArgs e)

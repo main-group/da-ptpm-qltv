@@ -29,110 +29,121 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTrangChu));
-            this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.btnDocGia = new DevExpress.XtraBars.BarButtonItem();
-            this.btnSach = new DevExpress.XtraBars.BarButtonItem();
-            this.rbpDanhMuc = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.grcDSTheLoai = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grcDSTheLoai)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            this.tlsTopMenu = new System.Windows.Forms.ToolStrip();
+            this.btnHeThong = new System.Windows.Forms.ToolStripButton();
+            this.btnThoat = new System.Windows.Forms.ToolStripButton();
+            this.btnBaoCao = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.splCont = new System.Windows.Forms.SplitContainer();
+            this.navMain = new DevExpress.XtraNavBar.NavBarControl();
+            this.navBarGroup1 = new DevExpress.XtraNavBar.NavBarGroup();
+            this.tlsTopMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splCont)).BeginInit();
+            this.splCont.Panel1.SuspendLayout();
+            this.splCont.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.navMain)).BeginInit();
             this.SuspendLayout();
             // 
-            // ribbon
+            // tlsTopMenu
             // 
-            this.ribbon.ExpandCollapseItem.Id = 0;
-            this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbon.ExpandCollapseItem,
-            this.btnDocGia,
-            this.btnSach});
-            this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ribbon.MaxItemId = 3;
-            this.ribbon.Name = "ribbon";
-            this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.rbpDanhMuc});
-            this.ribbon.Size = new System.Drawing.Size(1027, 143);
-            this.ribbon.StatusBar = this.ribbonStatusBar;
+            this.tlsTopMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnHeThong,
+            this.toolStripSeparator1,
+            this.btnBaoCao,
+            this.toolStripSeparator2,
+            this.btnThoat});
+            this.tlsTopMenu.Location = new System.Drawing.Point(0, 0);
+            this.tlsTopMenu.Name = "tlsTopMenu";
+            this.tlsTopMenu.Size = new System.Drawing.Size(890, 25);
+            this.tlsTopMenu.TabIndex = 0;
+            this.tlsTopMenu.Text = "toolStrip1";
             // 
-            // btnDocGia
+            // btnHeThong
             // 
-            this.btnDocGia.Caption = "Độc giả";
-            this.btnDocGia.Glyph = ((System.Drawing.Image)(resources.GetObject("btnDocGia.Glyph")));
-            this.btnDocGia.Id = 1;
-            this.btnDocGia.Name = "btnDocGia";
+            this.btnHeThong.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.btnHeThong.Image = ((System.Drawing.Image)(resources.GetObject("btnHeThong.Image")));
+            this.btnHeThong.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnHeThong.Name = "btnHeThong";
+            this.btnHeThong.Size = new System.Drawing.Size(61, 22);
+            this.btnHeThong.Text = "Hệ thống";
             // 
-            // btnSach
+            // btnThoat
             // 
-            this.btnSach.Caption = "Sách";
-            this.btnSach.Glyph = ((System.Drawing.Image)(resources.GetObject("btnSach.Glyph")));
-            this.btnSach.Id = 2;
-            this.btnSach.Name = "btnSach";
+            this.btnThoat.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
+            this.btnThoat.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(41, 22);
+            this.btnThoat.Text = "Thoát";
             // 
-            // rbpDanhMuc
+            // btnBaoCao
             // 
-            this.rbpDanhMuc.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1});
-            this.rbpDanhMuc.Name = "rbpDanhMuc";
-            this.rbpDanhMuc.Text = "Danh mục";
+            this.btnBaoCao.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.btnBaoCao.Image = ((System.Drawing.Image)(resources.GetObject("btnBaoCao.Image")));
+            this.btnBaoCao.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnBaoCao.Name = "btnBaoCao";
+            this.btnBaoCao.Size = new System.Drawing.Size(53, 22);
+            this.btnBaoCao.Text = "Báo cáo";
             // 
-            // ribbonPageGroup1
+            // toolStripSeparator1
             // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.btnDocGia);
-            this.ribbonPageGroup1.ItemLinks.Add(this.btnSach);
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
-            // ribbonStatusBar
+            // toolStripSeparator2
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 586);
-            this.ribbonStatusBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ribbonStatusBar.Name = "ribbonStatusBar";
-            this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1027, 31);
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
-            // grcDSTheLoai
+            // splCont
             // 
-            this.grcDSTheLoai.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grcDSTheLoai.Location = new System.Drawing.Point(0, 143);
-            this.grcDSTheLoai.MainView = this.gridView1;
-            this.grcDSTheLoai.MenuManager = this.ribbon;
-            this.grcDSTheLoai.Name = "grcDSTheLoai";
-            this.grcDSTheLoai.Size = new System.Drawing.Size(1027, 443);
-            this.grcDSTheLoai.TabIndex = 2;
-            this.grcDSTheLoai.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
+            this.splCont.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splCont.Location = new System.Drawing.Point(0, 25);
+            this.splCont.Name = "splCont";
             // 
-            // gridView1
+            // splCont.Panel1
             // 
-            this.gridView1.GridControl = this.grcDSTheLoai;
-            this.gridView1.Name = "gridView1";
+            this.splCont.Panel1.Controls.Add(this.navMain);
+            this.splCont.Size = new System.Drawing.Size(890, 465);
+            this.splCont.SplitterDistance = 201;
+            this.splCont.TabIndex = 1;
+            // 
+            // navMain
+            // 
+            this.navMain.ActiveGroup = this.navBarGroup1;
+            this.navMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.navMain.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
+            this.navBarGroup1});
+            this.navMain.Location = new System.Drawing.Point(0, 0);
+            this.navMain.Name = "navMain";
+            this.navMain.Size = new System.Drawing.Size(201, 465);
+            this.navMain.TabIndex = 0;
+            this.navMain.Text = "navBarControl1";
+            // 
+            // navBarGroup1
+            // 
+            this.navBarGroup1.Caption = "navBarGroup1";
+            this.navBarGroup1.Expanded = true;
+            this.navBarGroup1.Name = "navBarGroup1";
             // 
             // FrmTrangChu
             // 
-            this.Appearance.BackColor = System.Drawing.SystemColors.Control;
-            this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1027, 617);
-            this.Controls.Add(this.grcDSTheLoai);
-            this.Controls.Add(this.ribbonStatusBar);
-            this.Controls.Add(this.ribbon);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ClientSize = new System.Drawing.Size(890, 490);
+            this.Controls.Add(this.splCont);
+            this.Controls.Add(this.tlsTopMenu);
             this.Name = "FrmTrangChu";
-            this.Ribbon = this.ribbon;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.StatusBar = this.ribbonStatusBar;
-            this.Text = "Trang chủ";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Text = "FrmTrangChu";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmTrangChu_FormClosing);
-            this.Load += new System.EventHandler(this.FrmMain_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grcDSTheLoai)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            this.Load += new System.EventHandler(this.FrmTrangChu_Load);
+            this.tlsTopMenu.ResumeLayout(false);
+            this.tlsTopMenu.PerformLayout();
+            this.splCont.Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splCont)).EndInit();
+            this.splCont.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.navMain)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,13 +151,14 @@
 
         #endregion
 
-        private DevExpress.XtraBars.Ribbon.RibbonControl ribbon;
-        private DevExpress.XtraBars.Ribbon.RibbonPage rbpDanhMuc;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
-        private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
-        private DevExpress.XtraBars.BarButtonItem btnDocGia;
-        private DevExpress.XtraBars.BarButtonItem btnSach;
-        private DevExpress.XtraGrid.GridControl grcDSTheLoai;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private System.Windows.Forms.ToolStrip tlsTopMenu;
+        private System.Windows.Forms.ToolStripButton btnHeThong;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripButton btnBaoCao;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripButton btnThoat;
+        private System.Windows.Forms.SplitContainer splCont;
+        private DevExpress.XtraNavBar.NavBarControl navMain;
+        private DevExpress.XtraNavBar.NavBarGroup navBarGroup1;
     }
 }
